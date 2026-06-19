@@ -1,0 +1,29 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socio-Economic Spatial Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Regional Labor Indicators Map</h1>
+            <p>Interactive spatial distribution of socio-economic variables.</p>
+        </header>
+        <main>
+            <div id="map-container"></div>
+            <div id="legend"></div>
+            <div id="tooltip" class="hidden">
+                <p><strong id="region-name">Region</strong></p>
+                <p>Indicator: <span id="indicator-value">0</span>%</p>
+            </div>
+        </main>
+    </div>
+    <script src="js/map.js"></script>
+</body>
+</html>
